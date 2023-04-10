@@ -1,38 +1,377 @@
-.App {
+body {
+    position: absolute;
+}
+@media screen and (max-width: 500px) 
+{
+    body{
+      position: sticky;
+      
+    }
+}
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+}
+.navbar{
+    background-color: black !important;
+}
+.textcolor{
+    color: white !important;
+    font-size: large !important;
+}
+.textcolor:hover{
+    color: red !important;
+}
+@media screen and (max-width: 500px) 
+{
+    .heading,.para{
+      margin-top: 20%;
+    }
+}
+.Break
+{
+    margin-top: 20px;
+}
+.Breake
+{
+    margin-top: 5px;
+    text-align: center;
+    margin-right: 20px;
+}
+.btn{
+ color: red !important;
+ border: 2px ridge whitesmoke!important;
+ margin-top: 20px;
+}
+.footer{
+    text-align: center;
+}
+.News{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 10px;
+    
+}
+.cards{
+    width: 70% !important;
+    cursor: pointer;
+    margin: auto;
+}
+.imgs{
+    transition: transform .2s;
+}
+.imgs:hover {
+    transform: scale(1.1); 
+}
+.morenews{
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 12px 15px;
+  font-size: 20px;
+  margin-top: 30px;
   text-align: center;
+  margin-bottom: 30px;
+}
+.morenews:hover{
+    background-color: red;
+    color: white;
+}
+.divv{
+    text-align: center;
+}
+.animation
+{
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.divofupcomingmatch{
+    background-color: #002E47;
+    margin-top: 20px;
+    width: 100%;
+    height: 600px;
+}
+.upcomingmatch{
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 300%;
+    padding-top: 50px;
+}
+.seenow{
+    color: white;
+    margin-left: 10px;
+    font-weight: small;
+    font-size: 200%;
+    width: 12%;
+    margin-left: 20px;
+}
+.seenow:hover
+{   color: red;
+    cursor: pointer;
+}
+.divofastralisfamily
+{
+    background-color: #063547;
+    width: 100%;
+    display: flex;
+}
+.astralisfamily{
+    color: white;
+    margin-left: 20px;
+    margin-top: 50px;
+    font-weight: bolder;
+    font-size: 300%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.joinastralisfamily{
+    color: white;
+    background-color: #063547;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.para{
+    font-size: larger;
+}
+.FSFIELD{
+    font-size: 15pt;
+    padding: 9px;
+    caret-color: red;
+    max-width: 200px;
+    border-radius: 4px;
+    border-color: red;
+}
+.FSFIELD:focus{
+    border:2px solid #4D90FE;
+    outline: none;
+}
+.EMAILFS{
+    font-size: 15pt;
+    padding: 9px;
+    margin-top: 5px;
+    caret-color: red;
+    border-radius: 4px;
+    max-width: 200px;
+    border-color: red;
+}
+.EMAILFS:focus{
+    border:2px solid #4D90FE;
+    outline: none;
+}
+.submitbtn{
+    font-size: 15pt;
+    margin-top: 5px;
+    padding: 9px;
+    caret-color: red;
+    border-radius: 4px;
+    color: red;
+    font-weight:bolder;
+    border-radius: 4px;
+    max-width: 200px;
+    border-color: red;
+    margin-bottom: 5px
+    
+}
+.submitbtn:hover{
+    background-color: red;
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.mainbg{
+    width: 100%;
+    height: 600px;
+}
+.bgimg {
+    width: 100%;
+    height: 600px;
+}
+.astralisnexus{
+    color: white;
+    margin-left: 20px;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 300%;
+}
+.visitnow{
+    color: white;
+    margin-left: 20px;
+    font-weight: small;
+    font-size: 200%;
+    width: 12%;
+}
+.visitnow:hover
+{   color: red;
+    cursor: pointer;
+}
+.astralisnexusdiv{
+    margin-top: -500px;
+}
+.divoffooter{
+    background-color: #01131E;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+.allfootercomponents{
+    color: white;
+    text-decoration: none;
+    padding-top: 30px;
+    font-size: larger;
+    font-weight: bolder;
+    width: 10%;
+    margin-left: 30px;
+    display: flex;
+    
 }
 
-.App-link {
-  color: #61dafb;
+.allfootercomponents:hover{
+    color: red;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footertextcol{
+    color: white;
+    margin-left: 30px;
 }
+.divofsocialicons{
+    width: 20%;
+    align-items: end;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin-right: 15px;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+.allsocialicons{ 
+    color: white;
+    text-decoration: none;
+}
+.allsocialicons:hover{
+    color: red;
+}
+@media screen and (max-width: 790px) 
+{
+    .divofsocialicons{
+      margin-right: 20%;
+      
+    }
+}
+.top{
+    position:fixed;
+    bottom:0;
+    right:0;
+    background-color: black;
+    border-radius: 50%;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+.toplogoclass{
+    border-radius: 50%;
+}
+.AstralisFamilyAbout{
+    color: white;
+    background-color: #01131E;
+    height: 723px;
+}
+.headofaboutus{
+    display: flex;
+    justify-content: center;
+}
+.headofaboutus:hover{
+    color: red;
+}
+.aboutustext{
+    display: flex;
+    text-align: center;
+    font-size: larger;
+    font-family:Arial, Helvetica, sans-serif
+}
+@media screen and (max-width: 877px) 
+{
+    .AstralisFamilyAbout,.aboutustext{
+      margin-bottom: 20%;
+      background-color: #01131E;
+    }
+    
+}
+.divoflink{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.linkmainpage{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+.linkmainpage:hover{
+    color: red;
+}
+.divofcontactform{
+    background-color:#01131E;
+    height: 723px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.inputofemail{
+    margin-top: 8px;
+    border-radius: 10%;
+    font-size: larger;
+    caret-color: red;
+}
+.inputofname{
+    font-size: larger;
+    border-radius: 10%;
+    caret-color: red;
+}
+::placeholder{
+    color: #01131E;
+}
+.classofcomment{
+    margin-top: 8px;
+    height: 100px;
+    padding-bottom: 60px;
+    caret-color: red;
+    border-radius: 10%;
+    width: 300px;
+}
+.cmmntbtn{
+    margin-top: 8px;
+    background-color: white;
+    color: #01131E;
+    font-size: larger;
+}
+.cmmntbtn:hover{
+    background-color: red;
+    color: white;
+}
+.paraofcmmnt{
+    color: white;
+    font-size: larger;
+    justify-content: center;
+}
+.Maindivofcmmnt{
+    background-color: #01131E;
+}
+.marquee{
+    font-size: large;
+    color: black;
+    font-weight: bold;
+    
+}
+/* .marqueediv{
+position: fixed;
+z-index: 1;
+width: 100%;
+} */
